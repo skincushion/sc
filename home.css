@@ -4,26 +4,28 @@
  box-sizing: border-box;
 }
 
-@media screen and (max-width: 700px) {
- .content-bar {height:700px;background-size:cover;}
+@media screen and (max-width: 599px) {
+ .content-bar {min-height:775px;background-size:cover;}
  .nav_drip {transform: translate(0, -30%);}
  #splashsec {background-image:url(images/band/place3.jpg);}
- h1 {font-size:40px;}
+ #splashsec h1 {margin-top:5rem;}
+ h1 {font-size:32px;}
  .menbar {width:85%;}
- .socbar {width: 10%;}
+ .socbar {width:10%;justify-content:center;}
  .menbar li {font-size:18px;}
- .socbar li {display:block;}
+ .socbar li {display:block;padding:0.25rem 0;}
 }
 
-@media screen and (min-width: 701px) {
- .content-bar {height:725px;background-size:cover;}
+@media screen and (min-width: 600px) {
+ .content-bar {min-height:725px;background-size:cover;}
  .nav_drip {transform: translate(0, -29.5%);}
  #splashsec {background-image:url(images/band/place2.jpg);}
+ #splashsec h1 {margin-top:30rem;}
  h1 {font-size:60px;}
- .menbar {width:50%;}
- .socbar {width: 50%;}
+ .menbar {width:70%;}
+ .socbar {width:30%;justify-content:flex-end;}
  .menbar li {font-size:20px;}
- .socbar li {display:inline-block;}
+ .socbar li {display:inline-block;padding:0.5rem;}
 }
 
 @media screen and (min-width: 1001px) {
@@ -32,19 +34,24 @@
 }
 
 @media screen and (min-width: 1280px) {
- .content-bar {height:700px;}
+ .content-bar {min-height:700px;}
+ #splashsec h1 {}
+}
+
+@media screen and (min-width: 1450px) {
+ #splashsec h1 {margin:0;transform:translate(0, 750%);}
 }
 
 @media screen and (min-width: 1920px) {
- .content-bar {height:1080px;}
+ .content-bar {min-height:900px;}
 }
 
 @media screen and (min-width: 2560px) {
- .content-bar {height:1440px;}
+ .content-bar {min-height:1000px;}
 }
 
 @media screen and (min-width: 3840px) {
- .content-bar {height:2160px;}
+ .content-bar {min-height:2000px;}
 }
 
 html {
@@ -60,7 +67,7 @@ html::-webkit-scrollbar {
 
 .navbar {
  top: 0;
- position: fixed;
+ position: sticky;
  width: 100%;
 }
 .nav_drip {
@@ -73,11 +80,7 @@ html::-webkit-scrollbar {
  clear: both;
 }
 .content-bar {
- margin-top:1rem;
- width: 100%;
- display:flex;
- justify-content: center;
- align-items: center;
+ padding: 2rem 5%;
 }
 h1 {
  color: #FFFFFF;
@@ -88,16 +91,20 @@ h1 {
  display: flex;
  justify-content: flex-start;
 }
+.menbar ul {
+ display: flex;
+ align-content: center;
+ flex-wrap: wrap;
+}
 .menbar li {
  display: inline-block;
+ margin: 0 0.75rem;
 }
 .socbar {
  float: right;
  display: flex;
- justify-content: flex-end;
 }
-li {
- margin: 0 0.75rem;
+.socbar li {
 }
 li img {
  position: center center;
@@ -109,7 +116,16 @@ a {
  text-decoration:none;
  color:#000000;
 }
+.content-bar div img {
+ width: 100%;
+ height: auto;
+}
+#aboutsec picture {
+ margin-bottom: 1rem;
+ display:block;
+}
 .footer {
+ bottom: 0;
  display: flex;
  padding: 2rem 0;
  background-color: #000000;
