@@ -5,10 +5,18 @@
 }
 html {
  background-color: #000000;
+ overflow-y: scroll;
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
 }
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome and the rest */
+}
+
 .navbar {
  top: 0;
- display: fixed;
+ position: fixed;
  width: 100%;
 }
 .nav_drip {
@@ -16,12 +24,19 @@ html {
  background-repeat: no-repeat;
  background-size: cover;
  background-position: bottom center;
- width: 100%;
- height: 450px;
+ height: 430px;
 }
 .navbar:after {
  content: "";
  clear: both;
+}
+.content-bar {
+ margin:1rem 0;
+ width: 100%;
+ height: 950px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
 }
 h1 {
  color: #FFFFFF;
