@@ -4,46 +4,47 @@
  box-sizing: border-box;
 }
 
-@media screen and (max-width: 780px) {
- .content-bar {height:725px;background-size:cover;}
- .nav_drip {transform: translate(0, -35px);}
+@media screen and (max-width: 700px) {
+ .content-bar {height:700px;background-size:cover;}
+ .nav_drip {transform: translate(0, -30%);}
  #splashsec {background-image:url(images/band/place3.jpg);}
  h1 {font-size:40px;}
- li {font-size:18px;}
+ .menbar {width:85%;}
+ .socbar {width: 10%;}
+ .menbar li {font-size:18px;}
+ .socbar li {display:block;}
 }
 
-@media screen and (min-width: 781px) {
+@media screen and (min-width: 701px) {
  .content-bar {height:725px;background-size:cover;}
- .nav_drip {transform: translate(0, -70px);}
+ .nav_drip {transform: translate(0, -29.5%);}
  #splashsec {background-image:url(images/band/place2.jpg);}
  h1 {font-size:60px;}
- li {font-size:20px;}
+ .menbar {width:50%;}
+ .socbar {width: 50%;}
+ .menbar li {font-size:20px;}
+ .socbar li {display:inline-block;}
 }
 
 @media screen and (min-width: 1001px) {
  .content-bar {background-size:cover;}
- .nav_drip {transform: translate(0, -90px);}
  li {font-size:24px;}
 }
 
-@media screen and (min-width: 1279px) {
- .content-bar {height:950px;}
- .nav_drip {transform: translate(0, -115px);}
-}
-
-@media screen and (min-width: 1501px) {
- .content-bar {height:950px;}
- .nav_drip {transform: translate(0, -135px);}
-}
-
-@media screen and (min-width: 1701px) {
- .content-bar {height:950px;}
- .nav_drip {transform: translate(0, -158px);}
+@media screen and (min-width: 1280px) {
+ .content-bar {height:700px;}
 }
 
 @media screen and (min-width: 1920px) {
- .content-bar {height:950px;}
- .nav_drip {transform: translate(0, -175px);}
+ .content-bar {height:1080px;}
+}
+
+@media screen and (min-width: 2560px) {
+ .content-bar {height:1440px;}
+}
+
+@media screen and (min-width: 3840px) {
+ .content-bar {height:2160px;}
 }
 
 html {
@@ -83,20 +84,23 @@ h1 {
  font-family: Verdana, sans-serif;
 }
 .menbar {
- width: 50%;
  float: left;
  display: flex;
  justify-content: flex-start;
 }
+.menbar li {
+ display: inline-block;
+}
 .socbar {
- width: 50%;
  float: right;
  display: flex;
  justify-content: flex-end;
 }
 li {
- display: inline-block;
  margin: 0 0.75rem;
+}
+li img {
+ position: center center;
 }
 a:hover {
  color: #5f0000;
