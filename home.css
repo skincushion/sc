@@ -20,11 +20,11 @@ html::-webkit-scrollbar {
  width: 100%;
 }
 .nav_drip {
- background-image: url(images/ui/2redd.svg);
+ background-image: url(images/ui/3redd.svg);
  background-repeat: no-repeat;
  background-size: cover;
  background-position: bottom center;
- height: 430px;
+ height: 470px;
 }
 .navbar:after {
  content: "";
