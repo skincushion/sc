@@ -5,35 +5,45 @@
 }
 
 @media screen and (max-width: 780px) {
- .nav_drip {height:350px;background-position:bottom right;}
  .content-bar {height:725px;background-size:cover;}
+ .nav_drip {transform: translate(0, -35px);}
  #splashsec {background-image:url(images/band/place3.jpg);}
  h1 {font-size:40px;}
  li {font-size:18px;}
 }
 
 @media screen and (min-width: 781px) {
- .nav_drip {height:275px;background-position:bottom center;}
  .content-bar {height:725px;background-size:cover;}
+ .nav_drip {transform: translate(0, -70px);}
  #splashsec {background-image:url(images/band/place2.jpg);}
  h1 {font-size:60px;}
  li {font-size:20px;}
 }
 
 @media screen and (min-width: 1001px) {
- .nav_drip {height:330px;background-position:bottom center;}
  .content-bar {background-size:cover;}
+ .nav_drip {transform: translate(0, -90px);}
  li {font-size:24px;}
 }
 
 @media screen and (min-width: 1279px) {
- .nav_drip {height:375px;}
  .content-bar {height:950px;}
+ .nav_drip {transform: translate(0, -115px);}
 }
 
 @media screen and (min-width: 1501px) {
- .nav_drip {height:475px;}
  .content-bar {height:950px;}
+ .nav_drip {transform: translate(0, -135px);}
+}
+
+@media screen and (min-width: 1701px) {
+ .content-bar {height:950px;}
+ .nav_drip {transform: translate(0, -158px);}
+}
+
+@media screen and (min-width: 1920px) {
+ .content-bar {height:950px;}
+ .nav_drip {transform: translate(0, -175px);}
 }
 
 html {
@@ -53,9 +63,9 @@ html::-webkit-scrollbar {
  width: 100%;
 }
 .nav_drip {
- background-image: url(images/ui/3redd.svg);
- background-repeat: no-repeat;
- background-size: cover;
+ width: 100%;
+ position:absolute;
+ z-index: -1;
 }
 .navbar:after {
  content: "";
