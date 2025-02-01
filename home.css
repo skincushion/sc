@@ -6,31 +6,30 @@
 
 @media screen and (max-width: 599px) {
  .content-bar {min-height:775px;background-size:cover;}
+ .desktop-nav {display:none;}
+ .mobile-nav {display:flex;}
  .nav_drip {transform: translate(0, -30%);}
  #splashsec {background-image:url(images/band/place3.jpg);}
  #splashsec h1 {margin-top:5rem;}
  h1 {font-size:32px;}
- .menbar {width:85%;}
- .socbar {width:10%;justify-content:center;}
- .menbar li {font-size:18px;}
- .socbar li {display:block;padding:0.25rem 0;}
+ p {margin:1rem 0;}
 }
 
 @media screen and (min-width: 600px) {
  .content-bar {min-height:725px;background-size:cover;}
+ .desktop-nav {display:flex;}
+ .mobile-nav {display:none;}
  .nav_drip {transform: translate(0, -29.5%);}
  #splashsec {background-image:url(images/band/place2.jpg);}
  #splashsec h1 {margin-top:30rem;}
  h1 {font-size:60px;}
- .menbar {width:70%;}
- .socbar {width:30%;justify-content:flex-end;}
- .menbar li {font-size:20px;}
- .socbar li {display:inline-block;padding:0.5rem;}
+ p {margin:1rem 0;}
 }
 
 @media screen and (min-width: 1001px) {
  .content-bar {background-size:cover;}
  .aboutgall {columns:20rem 2;}
+ p {margin:1rem 10%;}
  li {font-size:24px;}
 }
 
@@ -41,6 +40,7 @@
 @media screen and (min-width: 1476px) {
  #splashsec h1 {margin:0;transform:translate(0, 650%);}
  .aboutgall {columns:20rem 4;}
+ p {margin:1rem 20%;}
 }
 
 @media screen and (min-width: 1920px) {
@@ -73,6 +73,21 @@ html::-webkit-scrollbar {
  position: sticky;
  width: 100%;
 }
+
+.mobile-nav {
+ .menbar {width:85%;}
+ .socbar {width:10%;justify-content:center;}
+ .menbar li {font-size:18px;}
+ .socbar li {display:block;padding:0.25rem 0;}
+}
+
+.desktop-nav {
+ .menbar {width:70%;}
+ .socbar {width:30%;justify-content:flex-end;}
+ .menbar li {font-size:20px;}
+ .socbar li {display:inline-block;padding:0.5rem;}
+}
+
 .nav_drip {
  width: 100%;
  aspect-ratio: 6.25/1;
@@ -107,8 +122,6 @@ h1 {
 .socbar {
  float: right;
  display: flex;
-}
-.socbar li {
 }
 li img {
  position: center center;
