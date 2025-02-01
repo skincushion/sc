@@ -30,6 +30,7 @@
 
 @media screen and (min-width: 1001px) {
  .content-bar {background-size:cover;}
+ .aboutgall {columns:20rem 2;}
  li {font-size:24px;}
 }
 
@@ -37,8 +38,9 @@
  .content-bar {min-height:700px;}
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1476px) {
  #splashsec h1 {margin:0;transform:translate(0, 650%);}
+ .aboutgall {columns:20rem 4;}
 }
 
 @media screen and (min-width: 1920px) {
