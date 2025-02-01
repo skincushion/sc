@@ -35,6 +35,7 @@
 
 @media screen and (min-width: 1280px) {
  .content-bar {min-height:700px;}
+ #splashsec h1 {position:sticky;}
 }
 
 @media screen and (min-width: 1476px) {
@@ -57,6 +58,12 @@
  .content-bar {min-height:2000px;}
 }
 
+.freckle-face-regular {
+  font-family: "Freckle Face", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
  background-color: #000000;
  overflow-y: scroll;
@@ -77,14 +84,14 @@ html::-webkit-scrollbar {
 .mobile-nav {
  .menbar {width:85%;}
  .socbar {width:10%;justify-content:center;}
- .menbar li {font-size:18px;}
+ .menbar li {font-size:24px;}
  .socbar li {display:block;padding:0.25rem 0;}
 }
 
 .desktop-nav {
  .menbar {width:70%;}
  .socbar {width:30%;justify-content:flex-end;}
- .menbar li {font-size:20px;}
+ .menbar li {font-size:28px;}
  .socbar li {display:inline-block;padding:0.5rem;}
 }
 
@@ -103,7 +110,7 @@ html::-webkit-scrollbar {
 }
 h1 {
  color: #FFFFFF;
- font-family: Verdana, sans-serif;
+ font-family: Freckle Face, sans-serif;
 }
 .menbar {
  float: left;
@@ -114,6 +121,7 @@ h1 {
  display: flex;
  align-content: center;
  flex-wrap: wrap;
+ font-family: Freckle Face, sans-serif;
 }
 .menbar li {
  display: inline-block;
