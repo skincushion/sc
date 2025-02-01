@@ -35,18 +35,19 @@
 
 @media screen and (min-width: 1280px) {
  .content-bar {min-height:700px;}
- #splashsec h1 {}
 }
 
 @media screen and (min-width: 1450px) {
- #splashsec h1 {margin:0;transform:translate(0, 750%);}
+ #splashsec h1 {margin:0;transform:translate(0, 650%);}
 }
 
 @media screen and (min-width: 1920px) {
+ #splashsec h1 {margin:0;transform:translate(0, 750%);}
  .content-bar {min-height:900px;}
 }
 
 @media screen and (min-width: 2560px) {
+ #splashsec h1 {margin:0;transform:translate(0, 1000%);}
  .content-bar {min-height:1000px;}
 }
 
@@ -72,6 +73,7 @@ html::-webkit-scrollbar {
 }
 .nav_drip {
  width: 100%;
+ aspect-ratio: 6.25/1;
  position:absolute;
  z-index: -1;
 }
