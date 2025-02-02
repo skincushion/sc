@@ -125,7 +125,6 @@ h1 {
 }
 .menbar li {
  display: inline-block;
- margin: 0 0.75rem;
 }
 .socbar {
  float: right;
@@ -133,6 +132,12 @@ h1 {
 }
 li img {
  position: center center;
+}
+.menbar li a {
+ padding: 0 0.75rem;
+}
+.socbar li a {
+ padding: 0 0.25rem;
 }
 a:hover {
  color: #5f0000;
