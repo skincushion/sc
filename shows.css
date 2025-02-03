@@ -5,7 +5,7 @@
 }
 
 @media screen and (max-width: 599px) {
- .content-bar {min-height:775px;background-size:cover;}
+ .content-bar {min-height:800px;background-size:cover;}
  .desktop-nav {display:none;}
  .mobile-nav {display:flex;}
  .nav_drip {transform: translate(0, -30%);}
@@ -17,7 +17,7 @@
 }
 
 @media screen and (min-width: 600px) {
- .content-bar {min-height:725px;background-size:cover;}
+ .content-bar {min-height:800px;background-size:cover;}
  .desktop-nav {display:flex;}
  .mobile-nav {display:none;}
  .nav_drip {transform: translate(0, -29.5%);}
@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 1280px) {
- .content-bar {min-height:700px;}
+ .content-bar {min-height:850px;}
  #splashsec h1 {position:sticky;}
 }
 
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 1920px) {
  #splashsec h1 {margin:0;transform:translate(0, 750%);}
- .content-bar {min-height:900px;}
+ .content-bar {min-height:950px;}
 }
 
 @media screen and (min-width: 2560px) {
@@ -162,6 +162,7 @@ button {
 }
 button:hover {
  background-color: #fd0100;
+ cursor:pointer;
 }
 .footer {
  bottom: 0;
