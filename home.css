@@ -84,7 +84,7 @@ html::-webkit-scrollbar {
 .mobile-nav {
  .menbar {width:85%;}
  .socbar {width:10%;justify-content:center;}
- .menbar li {font-size:24px;}
+ .menbar li {font-size:20px;}
  .socbar li {display:block;padding:0.25rem 0;}
 }
 
@@ -134,7 +134,7 @@ li img {
  position: center center;
 }
 .menbar li a {
- padding: 0 0.75rem;
+ padding: 0.75rem;
 }
 .socbar li a {
  padding: 0 0.25rem;
