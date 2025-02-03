@@ -67,7 +67,6 @@ html::-webkit-scrollbar {
  content: "";
  clear: both;
 }
-
 .menbar {
  float: left;
  display: flex;
@@ -89,7 +88,7 @@ html::-webkit-scrollbar {
 li img {
  position: center center;
 }
-.menbar li a {
+.menbar li {
  padding: 0.75rem;
 }
 .socbar li a {
