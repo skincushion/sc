@@ -1,0 +1,115 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+@media screen and (max-width: 599px) {
+ .desktop-nav {display:none;}
+ .mobile-nav {display:flex;}
+ .nav_drip {transform: translate(0, -30%);}
+}
+
+@media screen and (min-width: 600px) {
+ .desktop-nav {display:flex;}
+ .mobile-nav {display:none;}
+ .nav_drip {transform: translate(0, -29.5%);}
+}
+
+@media screen and (min-width: 1001px) {
+ li {font-size:24px;}
+}
+
+.freckle-face-regular {
+  font-family: "Freckle Face", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+ background-color: #000000;
+ overflow-y: scroll;
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome and the rest */
+}
+
+.navbar {
+ top: 0;
+ position: sticky;
+ width: 100%;
+}
+
+.mobile-nav {
+ .menbar {width:85%;}
+ .socbar {width:10%;justify-content:center;}
+ .menbar li {font-size:20px;}
+ .socbar li {display:block;padding:0.25rem 0;}
+}
+
+.desktop-nav {
+ .menbar {width:70%;}
+ .socbar {width:30%;justify-content:flex-end;}
+ .menbar li {font-size:28px;}
+ .socbar li {display:inline-block;padding:0.5rem;}
+}
+
+.nav_drip {
+ width: 100%;
+ aspect-ratio: 6.25/1;
+ position:absolute;
+ z-index: -1;
+}
+.navbar:after {
+ content: "";
+ clear: both;
+}
+
+.menbar {
+ float: left;
+ display: flex;
+ justify-content: flex-start;
+}
+.menbar ul {
+ display: flex;
+ align-content: center;
+ flex-wrap: wrap;
+ font-family: Freckle Face, sans-serif;
+}
+.menbar li {
+ display: inline-block;
+}
+.socbar {
+ float: right;
+ display: flex;
+}
+li img {
+ position: center center;
+}
+.menbar li a {
+ padding: 0.75rem;
+}
+.socbar li a {
+ padding: 0 0.25rem;
+}
+a:hover {
+ color: #5f0000;
+}
+a {
+ text-decoration:none;
+ color:#000000;
+}
+
+.footer {
+ bottom: 0;
+ display: flex;
+ padding: 2rem 0;
+ background-color: #000000;
+ position: relative;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
