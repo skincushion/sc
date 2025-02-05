@@ -1,6 +1,6 @@
 @media screen and (max-width: 599px) {
- .content-bar {min-height:775px;background-size:cover;}
- #splashsec {background-image:url(images/band/place3.jpg);}
+ .content-bar {min-height:790px;background-size:fit;}
+ #splashsec {background-color:#000000;}
  #splashsec h1 {margin-top:5rem;}
  h1 {font-size:32px;}
  p {margin:1rem 0;font-size:12px;}
@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 600px) {
  .content-bar {min-height:725px;background-size:cover;}
- #splashsec {background-image:url(images/band/place2.jpg);}
+ #splashsec {background-image:url(images/band/collage2.webp);}
  #splashsec h1 {margin-top:30rem;}
  h1 {font-size:60px;}
  p {margin:1rem 0;font-size:16px;}
@@ -21,7 +21,7 @@
 }
 
 @media screen and (min-width: 1280px) {
- .content-bar {min-height:700px;}
+ .content-bar {min-height:720px;}
  #splashsec h1 {position:sticky;}
 }
 
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 1920px) {
  #splashsec h1 {margin:0;transform:translate(0, 750%);}
- .content-bar {min-height:900px;}
+ .content-bar {min-height:1080px;}
 }
 
 @media screen and (min-width: 2560px) {
@@ -47,6 +47,11 @@
 
 .content-bar {
  padding: 2rem 5%;
+}
+.logodiv {
+ display:flex;
+ align-items:center;
+ justify-content:center;
 }
 h1 {
  color: #FFFFFF;
