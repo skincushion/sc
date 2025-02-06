@@ -54,7 +54,7 @@ html::-webkit-scrollbar {
  .menbar {width:70%;}
  .socbar {width:30%;justify-content:flex-end;}
  .menbar li {font-size:28px;}
- .socbar li {display:inline-block;padding:0.5rem;}
+ .socbar li {display:inline-block;padding:0 0.5rem;}
 }
 
 .nav_drip {
@@ -89,7 +89,7 @@ li img {
  position: center center;
 }
 .menbar li {
- padding: 0.75rem;
+ padding: 0 0.75rem;
 }
 .socbar li {
  padding: 0 0.25rem;

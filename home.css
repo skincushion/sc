@@ -1,5 +1,5 @@
 @media screen and (max-width: 599px) {
- .content-bar {min-height:750px;background-size:fit;}
+ .content-bar {background-size:fit;}
  #splashsec {background-color:#000000;}
  #splashsec h1 {margin-top:5rem;}
  h1 {font-size:32px;}
@@ -7,7 +7,7 @@
 }
 
 @media screen and (min-width: 600px) {
- .content-bar {min-height:725px;background-size:cover;}
+ .content-bar {background-size:cover;}
  #splashsec {background-image:url(images/band/collage1080.webp);}
  #splashsec h1 {margin-top:30rem;}
  h1 {font-size:60px;}
@@ -21,7 +21,6 @@
 }
 
 @media screen and (min-width: 1280px) {
- .content-bar {min-height:720px;}
  #splashsec h1 {position:sticky;}
 }
 
@@ -34,20 +33,15 @@
 @media screen and (min-width: 1920px) {
  #splashsec h1 {margin:0;transform:translate(0, 750%);}
  #splashsec {background-image:url(images/band/collage2.webp);}
- .content-bar {min-height:1080px;}
 }
 
 @media screen and (min-width: 2560px) {
  #splashsec h1 {margin:0;transform:translate(0, 1000%);}
- .content-bar {min-height:1000px;}
-}
-
-@media screen and (min-width: 3840px) {
- .content-bar {min-height:2000px;}
 }
 
 .content-bar {
  padding: 2rem 5%;
+ min-height: 95vh;
 }
 .logodiv {
  display:flex;
@@ -61,6 +55,11 @@ h1 {
 .content-bar div img {
  width: 100%;
  height: auto;
+}
+#aboutsec {
+ background-color: #5f0000;
+ justify-content:center;
+ align-items:center;
 }
 #aboutsec picture {
  margin-bottom: 1rem;
