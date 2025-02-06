@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 1001px) {
  .content-bar {background-size:cover;}
- .aboutgall {columns:20rem 2;}
+ .aboutgall {columns:30vw 2;}
  p {margin:1rem 10%;}
 }
 
@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 1476px) {
  #splashsec h1 {margin:0;transform:translate(0, 650%);}
- .aboutgall {columns:20rem 4;}
+ .aboutgall {columns:20vw 4;}
  p {margin:1rem 20%;}
 }
 
@@ -55,6 +55,13 @@ h1 {
 .content-bar div img {
  width: 100%;
  height: auto;
+}
+.logodiv svg {
+ max-width: 40vw;
+ min-width: 5vw;
+ max-height: 40vh;
+ min-height: 10vh;
+ aspect-ratio: 1/1;
 }
 #aboutsec {
  background-color: #5f0000;
